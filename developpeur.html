@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+  body {
+    background-color: #C45656;
+}
+</style>
+<title>Minica$h</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!--Ceci est la barre du haut avec les outils de navigation vers les autres pages -->
+	<header>
+		<a href="page d'aceuille.html"><img src="images/Logo-siteweb.png" style="width:192px;height:152px;position:absolute;top:0px;left:864px"/></a>
+		<!--Liens vers les autres pages-->
+		<nav>
+			<a href="catalogue.html" style="position:absolute;top:45px;left:200px"><b>Catalogue</b></a>
+			<a href="liste des souhaits.html" style="position:absolute;top:46px;left:415px"><b>Liste des souhaits</b></a>
+			<a href="Bibliotheque.html" style="position:absolute;top:45px;left:1200px"><b>Bibliotheque</b></a>
+			<a href="Amis.html" style="position:absolute;top:45px;left:1429px"><b>Amis</b></a>
+			<a href="oups.html" style="position:absolute;top:45px;left:1539px"><b>Activité</b></a>
+			<a href="oups.html"><img src="images/cadis2.png" alt="Panier" style="width:120px;height:95px;position:absolute;top:17px;left:1672px "/></a>
+			<a href="profil.html"><img src="images/profile.png" alt="Panier" style="position:absolute;top:17px;left:1798px "/></a>
+		</nav>	
+	</header>
+	<!--ajouter un developpeur dans notre base de données-->
+	<div style = "position:absolute;top:221px;left:670px" id="devShowDevBox">
+      <h2>Insertion des comptes developpeurs</h2>
+      <label for="id_dev">ID pour votre identifiant de developpeur (6 caractères):<br></label>
+      <input
+        type="number"
+        id="id_dev"
+        name="id_dev"
+        required
+        minlength="6"
+        maxlength="6"
+        size="47"
+      /><br><br>
+      <label for="nom_dev">Nom du developpeur (5 à 120 caractères):<br></label>
+      <input
+        type="text"
+        id="nom_dev"
+        name="nom_dev"
+        required
+        minlength="2"
+        maxlength="20"
+        size="47"
+      /><br><br>
+      <input id="customSubmitButton" type="button" value="Créer votre identifiant de développeur" onclick="ins_dev();" /><br><br><br>
+    </div>
+    <script src="script/ins_devID2.js"></script>
+
+    <div id="devShowDevBox" style = "position:absolute;top:221px;left:150px">
+      <h2 style="color: white; text-align: center">Listes des Développeurs</h2>
+      <p style="color: white; text-align: center">*Pour voir les nouveaux développeur, rafraichissez la page</p>
+      <p id="dev" style="color: white"></p>
+      <script src="script/listeDev.js"></script>
+    </div>
+</body>
+</html>
