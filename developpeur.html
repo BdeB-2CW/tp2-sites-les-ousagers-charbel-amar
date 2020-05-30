@@ -28,27 +28,11 @@
 	</header>
 	<!--ajouter un developpeur dans notre base de données-->
 	<div style = "position:absolute;top:221px;left:670px" id="devShowDevBox">
-      <h2>Insertion des comptes developpeurs</h2>
-      <label for="id_dev">ID pour votre identifiant de developpeur (6 caractères):<br></label>
-      <input
-        type="number"
-        id="id_dev"
-        name="id_dev"
-        required
-        minlength="6"
-        maxlength="6"
-        size="47"
-      /><br><br>
-      <label for="nom_dev">Nom du developpeur (5 à 120 caractères):<br></label>
-      <input
-        type="text"
-        id="nom_dev"
-        name="nom_dev"
-        required
-        minlength="2"
-        maxlength="20"
-        size="47"
-      /><br><br>
+      <h2>Création de comptes développeurs</h2>
+      <label for="id_dev"></label>
+      <input type="number" id="id_dev" name="id_dev" required minlength="1" maxlength="8" size="47" placeholder="ID de developpeur (1 à 8 charactères)"/><br><br>
+      <label for="nom_dev"></label>
+      <input type="text" id="nom_dev" name="nom_dev" required minlength="5" maxlength="120" size="47" placeholder="Nom du developpeur  (5 à 120 charactères)"/><br><br>
       <input id="customSubmitButton" type="button" value="Créer votre identifiant de développeur" onclick="ins_dev();" /><br><br><br>
     </div>
     <script src="script/ins_devID2.js"></script>
